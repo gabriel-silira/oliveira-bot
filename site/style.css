@@ -8,13 +8,14 @@
     text-decoration: none;
 }
 
-a {
-    display: inline-block;
-    transition: transform 0.5 ease;
+html {
+    scroll-behavior: smooth;
+    Scrollbar-width: none;
 }
 
 a:hover {
-    animation: pulsar 2s infinite;
+    display: inline-block;
+    animation: pulsar1 3s infinite;
 }
 
 .section-inicial {
@@ -42,6 +43,7 @@ a:hover {
 
 .conteudo-header-left {
     color: #F5FAFF;
+    margin-top: -15px;
     margin-left: 20px;
     margin-right: 925px;
     font-style: italic;
@@ -73,7 +75,6 @@ a:hover {
     padding-right: 20px;
     padding-top: 1px;
     padding-bottom: 1px;
-    transition: transform 0.5s ease;
 }
 
 .anchor-header {
@@ -82,6 +83,7 @@ a:hover {
 
 .conteudo-principal {
     display: flex;
+    flex-direction: row;
     margin: 0 auto;
     align-items: center;
     justify-content: space-around;
@@ -95,6 +97,7 @@ a:hover {
     border-radius: 50%;
     height: 300px;
     width: 300px;
+    animation: pulsar2 4s infinite;
 }
 
 .conteudo-bot {
@@ -119,8 +122,79 @@ h1 {
     padding: 12px 24px;
 }
 
-@keyframes pulsar {
+.conteudo-bot-desc {
+    color: #F5FAFF;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 32px;
+}
+
+.conteudo-bot-desc a {
+    background-color: #139ffc;
+    color: #F5FAFF;
+    font-size: 24px;
+    border-radius: 16px;
+    justify-content: center;
+    padding: 12px 24px;
+}
+
+.section-secundaria {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url(images/Background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F5FAFF;
+}
+
+.comandos {
+    display: flex;
+    flex-direction: column;
+    padding: 85px;
+}
+
+.comandos-w {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.lista-cmd {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+    padding: 32px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.comandos-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 32px;
+    font-size: 24px;
+}
+
+@keyframes pulsar1 {
     0% { transform: scale(1); }
     50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulsar2 {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }

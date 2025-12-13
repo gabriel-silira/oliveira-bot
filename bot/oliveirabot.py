@@ -83,7 +83,6 @@ async def help(ctx):
         "**d6**",
         "**d20**",
         "**d100**",
-        "**piada**",
         "**piadas**",
     ]
 
