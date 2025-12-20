@@ -2,7 +2,7 @@ bot_squeeze
 
 projeto de bot do discord
 
-link do site: https://gabriel-silira.github.io//oliveira-bot/site/?v=999
+link do site: https://gabriel-silira.github.io//squeeze-bot/site/?v=999
 
 comandos de moderação
 
